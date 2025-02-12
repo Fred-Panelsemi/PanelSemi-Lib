@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PanelSemiLib"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-        Title="{Binding PanelSemiLib_Version}" Height="600" Width="700" Background="{x:Null}" WindowStartupLocation="CenterScreen">
+        Title="{Binding PanelSemiLib_Version}" Height="600" Width="700" Background="{x:Null}" WindowStartupLocation="CenterScreen" TitleCharacterCasing="Normal">
     <mah:MetroWindow.TitleTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal"
@@ -70,7 +70,7 @@
         </Border>
         <Border Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2">
             <StackPanel>
-                <Button Content="版本表" Command="{Binding CallVersion}"/>
+                <Button Content="版本表" Command="{Binding CallVersion}" mah:ControlsHelper.ContentCharacterCasing="Normal"/>
             </StackPanel>
         </Border>
         <StackPanel Margin="5" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
