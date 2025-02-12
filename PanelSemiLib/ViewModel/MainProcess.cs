@@ -115,10 +115,10 @@ namespace PanelSemiLib.ViewModel
                     Process.Start("https://panelsemi.sharepoint.com/:f:/r/sites/TD60/Shared%20Documents/89%20Firmware%20%E7%89%88%E6%9C%AC%20List/FPGA%20bin%20file?csf=1&web=1&e=SoPpgu");
                     break;
                 case "MCU":
-                    Process.Start("https://panelsemi.sharepoint.com/:f:/r/sites/TD60/Shared%20Documents/89%20Firmware%20%E7%89%88%E6%9C%AC%20List/FPGA%20bin%20file?csf=1&web=1&e=SoPpgu");
+                    Process.Start("https://panelsemi.sharepoint.com/:f:/r/sites/TD60/Shared%20Documents/89%20Firmware%20%E7%89%88%E6%9C%AC%20List/MCU%20hex%20file?csf=1&web=1&e=dPtpwE");
                     break;
                 case "Scaler":
-                    Process.Start("https://panelsemi.sharepoint.com/:f:/r/sites/TD60/Shared%20Documents/89%20Firmware%20%E7%89%88%E6%9C%AC%20List/FPGA%20bin%20file?csf=1&web=1&e=SoPpgu");
+                    Process.Start("https://panelsemi.sharepoint.com/:f:/r/sites/TD60/Shared%20Documents/89%20Firmware%20%E7%89%88%E6%9C%AC%20List/Scaler%20hex%20file?csf=1&web=1&e=UB5phq");
                     break;
             }
         }
