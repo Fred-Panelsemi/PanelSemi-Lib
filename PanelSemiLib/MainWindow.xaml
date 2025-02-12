@@ -36,12 +36,16 @@
     </Window.Resources>
     <Grid Background="#FF3C3C3C">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.25*"/>
             <RowDefinition Height="0.08*"/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.08*"/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.08*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -56,6 +60,14 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <TextBlock Margin="5" Grid.Row="8" Grid.ColumnSpan="10" Text="當前各組件軟體版本" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" />
+        <Separator Grid.Row="9" Grid.ColumnSpan="10" Margin="5,0,5,0" />
+        <Border Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel>
+                <TextBlock Text="螢幕拼接 : 尚未發行" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBlock Text="色差調整 : V1.0.0.0 Beta" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
         <TextBlock Margin="5" Grid.Row="0" Grid.ColumnSpan="2" Text="Production" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" />
         <Separator Grid.Row="1" Grid.ColumnSpan="2" Margin="5,0,5,0" />
         <Border Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" >
@@ -63,8 +75,8 @@
                 <ScrollViewer Grid.Row="0" Style="{StaticResource for_scrollviewer}" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Margin="0">
                     <StackPanel Margin="5,0,5,0">
 
-                        <Button Content="螢幕拼接" Height="50" Margin="8,0,8,10"/>
-                        <Button Content="色差調整" Height="50" Margin="8,0,8,10"/>
+                        <Button  IsEnabled="False" Content="螢幕拼接 【施工中】" Height="50" Margin="8,0,8,10"/>
+                        <Button Command="{Binding CallColor}" Content="色差調整" Height="50" Margin="8,0,8,10"/>
                         
                     </StackPanel>
                 </ScrollViewer>
@@ -72,16 +84,14 @@
         </Border>
         <TextBlock Margin="5" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="AIO UI" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" />
         <Separator Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="5,0,5,0" />
-        <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="3" >
+        <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" >
             <Grid>
                 <ScrollViewer Grid.Row="2" Style="{StaticResource for_scrollviewer}" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Margin="0">
                     <StackPanel Margin="5,0,5,0">
-
-                        <Button Content="V0028" Height="50" Margin="8,0,8,10"/>
-                        <Button Content="V0035" Height="50" Margin="8,0,8,10"/>
-                        <Button Content="V0036" Height="50" Margin="8,0,8,10"/>
-                        <Button Content="V0037" Height="50" Margin="8,0,8,10"/>
-                        <Button Content="V0038" Height="50" Margin="8,0,8,10"/>
+                        <Button Command="{Binding CallAIO}" CommandParameter="V0038" Content="V0038" Height="50" Margin="8,0,8,10"/>
+                        <Button Command="{Binding CallAIO}" CommandParameter="V0037" Content="V0037" Height="50" Margin="8,0,8,10"/>
+                        <Button Command="{Binding CallAIO}" CommandParameter="V0036" Content="V0036" Height="50" Margin="8,0,8,10"/>
+                        <Button Command="{Binding CallAIO}" CommandParameter="V0035" Content="V0035" Height="50" Margin="8,0,8,10"/>
                     </StackPanel>
                 </ScrollViewer>
             </Grid>
@@ -94,11 +104,40 @@
                 <ScrollViewer Grid.Row="0" Style="{StaticResource for_scrollviewer}" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Margin="0">
                     <StackPanel Margin="5,0,5,0">
 
-                        <Button Content="Primary Tool" Height="50" Margin="8,0,8,10" mah:ControlsHelper.ContentCharacterCasing="Normal"/>
+                        <Button Command="{Binding CallPrimaryTool}" Content="Primary Tool" Height="50" Margin="8,0,8,10" mah:ControlsHelper.ContentCharacterCasing="Normal"/>
 
                     </StackPanel>
                 </ScrollViewer>
             </Grid>
         </Border>
+
+        <TextBlock Margin="5" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="2" Text="Firmware 組件" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" />
+        <Separator Grid.Row="1" Grid.Column="6"  Grid.ColumnSpan="2" Margin="5,0,5,0" />
+        <Border Grid.Column="6" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" >
+            <Grid>
+                <ScrollViewer Grid.Row="0" Style="{StaticResource for_scrollviewer}" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Margin="0">
+                    <StackPanel Margin="5,0,5,0">
+
+                      
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
+        <TextBlock Margin="5" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="客製化" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" />
+        <Separator Grid.Row="5" Grid.Column="2"  Grid.ColumnSpan="2" Margin="5,0,5,0" />
+        <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="6" Grid.RowSpan="2" >
+            <Grid>
+                <ScrollViewer Grid.Row="0" Style="{StaticResource for_scrollviewer}" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Margin="0">
+                    <StackPanel Margin="5,0,5,0">
+
+                        <Button Content="威創 V0038" Height="50" Margin="8,0,8,10"/>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
     </Grid>
 </mah:MetroWindow>
