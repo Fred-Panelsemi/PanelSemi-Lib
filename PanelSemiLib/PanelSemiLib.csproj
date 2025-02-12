@@ -130,5 +130,23 @@
   <ItemGroup>
     <Resource Include="Launcher.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="圖片1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Lib icon 第六版.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AIO UI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PrimaryTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Lib icon 第四版.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Lib icon 第五版.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
