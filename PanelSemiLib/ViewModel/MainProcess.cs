@@ -38,7 +38,7 @@ namespace PanelSemiLib.ViewModel
         {
             /* 撈出版本號　=> 由AssemblyInfo.cs中設定 */
             var asm = Assembly.GetExecutingAssembly();
-            PanelSemiLib_Version = $"v{asm.GetName().Version} Beta";
+            PanelSemiLib_Version = $"v{asm.GetName().Version}";
 
             CallColor = new RelayCommand(CallColor_Action);
             CallPrimaryTool = new RelayCommand(CallPrimaryTool_Action);
