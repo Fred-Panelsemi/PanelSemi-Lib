@@ -65,7 +65,7 @@
         <Border Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2">
             <StackPanel>
                 <TextBlock Text="螢幕拼接 : 尚未發行" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBlock Text="色差調整 : V1.0.0.0 Beta" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBlock Text="色差調整 : v1.0.0.0" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </StackPanel>
         </Border>
         <Border Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2">

@@ -52,7 +52,8 @@ using System.Windows;
 // 設為預設，如下所示:
 // [assembly: AssemblyVersion("1.0.*")]
 // 1.0.0.0 Beta 初版
-// 1.0.0.1 修正 Firmware 路徑錯誤
-// 1.0.0.2 修正 Title 的 Version 全部是大寫問題
-[assembly: AssemblyVersion("1.0.0.2")]
-[assembly: AssemblyFileVersion("1.0.0.2")]
+// 1.0.0.1 Beta 修正 Firmware 路徑錯誤
+// 1.0.0.2 Beta 修正 Title 的 Version 全部是大寫問題
+// 1.0.0.3 更新 Color App 版本 ， 公佈欄 Color App 版本資訊更新 
+[assembly: AssemblyVersion("1.0.0.3")]
+[assembly: AssemblyFileVersion("1.0.0.3")]
