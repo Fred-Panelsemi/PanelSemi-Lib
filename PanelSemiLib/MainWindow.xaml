@@ -68,7 +68,13 @@
                 <TextBlock Text="色差調整 : v1.0.0.0" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </StackPanel>
         </Border>
-        <Border Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2">
+        <Border Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="4">
+            <StackPanel>
+                <TextBlock Text="* 修正開啟AIO_UI時操作拼接應用會跳 H.W. xxx的&#x000A;   錯誤視窗" Margin="5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="10" Grid.Column="6" Grid.ColumnSpan="2">
             <StackPanel>
                 <Button Content="版本表" Command="{Binding CallVersion}" mah:ControlsHelper.ContentCharacterCasing="Normal"/>
             </StackPanel>

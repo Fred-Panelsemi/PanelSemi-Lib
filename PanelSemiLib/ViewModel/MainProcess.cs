@@ -76,7 +76,6 @@ namespace PanelSemiLib.ViewModel
                 Directory.CreateDirectory(dirPath);
                 Console.WriteLine("The directory {0} was created.", dirPath);
             }
-
         }
 
         private void CallColor_Action()

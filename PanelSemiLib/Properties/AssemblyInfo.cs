@@ -54,6 +54,7 @@ using System.Windows;
 // 1.0.0.0 Beta 初版
 // 1.0.0.1 Beta 修正 Firmware 路徑錯誤
 // 1.0.0.2 Beta 修正 Title 的 Version 全部是大寫問題
-// 1.0.0.3 更新 Color App 版本 ， 公佈欄 Color App 版本資訊更新 
-[assembly: AssemblyVersion("1.0.0.3")]
-[assembly: AssemblyFileVersion("1.0.0.3")]
+// 1.0.0.3      更新 Color App 版本 ， 公佈欄 Color App 版本資訊更新 
+// 1.0.0.4      修正 呼叫 AIO UI 時會出現 H.W. xxxxx的錯誤視窗
+[assembly: AssemblyVersion("1.0.0.4")]
+[assembly: AssemblyFileVersion("1.0.0.4")]
