@@ -34,6 +34,7 @@ namespace PanelSemiLib.ViewModel
 
         public ICommand CallFirmware { get; set; }
         public ICommand CallVersion { get; set; }
+        public ICommand CallPsPattern { get; set; }
         public MainProcess() 
         {
             /* 撈出版本號　=> 由AssemblyInfo.cs中設定 */
@@ -45,6 +46,7 @@ namespace PanelSemiLib.ViewModel
             CallFirmware = new DelegateCommand<string>(CallFirmware_Action);
             CallVersion = new RelayCommand(CallVersion_Action);
             CallAIO = new DelegateCommand<string>(CallAIO_Action);
+            CallPsPattern = new RelayCommand(CallPsPattern_Action);
 
             string dirPath = @"Lib_Exe\AIO_UI";
             if (Directory.Exists(dirPath))
@@ -78,6 +80,11 @@ namespace PanelSemiLib.ViewModel
             }
         }
 
+        private void CallPsPattern_Action()
+        {
+            System.Diagnostics.Process.Start(@"Lib_Exe\PS點燈程式_V8\PS點燈程式_V8.exe");
+        }
+
         private void CallColor_Action()
         {
             System.Diagnostics.Process.Start(@"Lib_Exe\ColorAdjustment\Debug\PanelSemi_Coloradjustment.exe");
@@ -85,7 +92,6 @@ namespace PanelSemiLib.ViewModel
 
         private void CallAIO_Action(string paRa)
         {
-            
             System.Diagnostics.Process.Start($"Lib_Exe\\AIO_UI\\{paRa}\\AIO_UI.exe");
         }
 
