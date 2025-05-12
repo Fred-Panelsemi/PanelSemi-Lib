@@ -58,5 +58,6 @@ using System.Windows;
 // 1.0.0.4      修正 呼叫 AIO UI 時會出現 H.W. xxxxx的錯誤視窗
 // 1.0.0.5      新增 點燈程式 Pattern
 // 1.0.0.6      更新 色差程式進版
-[assembly: AssemblyVersion("1.0.0.6")]
-[assembly: AssemblyFileVersion("1.0.0.6")]
+// 1.0.0.7      更新 色差程式進版
+[assembly: AssemblyVersion("1.0.0.7")]
+[assembly: AssemblyFileVersion("1.0.0.7")]
